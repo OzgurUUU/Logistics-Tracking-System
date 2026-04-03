@@ -14,7 +14,7 @@ This repository presents a real-time logistics and courier tracking simulation, 
 ## 🛠️ Technology Stack
 
 **Backend (API & Core Infrastructure):**
-* .NET (C#) / ASP.NET Core Web API
+* .NET 8 (C#) / ASP.NET Core Web API
 * Entity Framework Core (Code-First Approach)
 * PostgreSQL (Relational Database)
 * StackExchange.Redis (Distributed Cache & Geo-Spatial Queries)
@@ -39,49 +39,37 @@ This repository presents a real-time logistics and courier tracking simulation, 
  ┣ 📜 docker-compose.yml # Container orchestration for PostgreSQL and Redis services
  ┗ 📜 README.md
 
-⚙️ Deployment & Initialization Protocol
+## ⚙️ Deployment & Initialization Protocol
+
 To provision the infrastructure and initialize the simulation in a local environment, adhere to the following directives:
 
-Prerequisites
-Docker Desktop or Docker Engine
+### Prerequisites
+* Docker Desktop or Docker Engine
+* .NET SDK (8.0 or higher)
+* Node.js & npm
+* Angular CLI
 
-.NET SDK (8.0 or higher)
-
-Node.js & npm
-
-Angular CLI
-
-Phase 1: Infrastructure Provisioning
+### Phase 1: Infrastructure Provisioning
 Navigate to the root directory and deploy the containerized dependencies (PostgreSQL & Redis):
 
-Bash
+```bash
 docker compose up -d
-Phase 2: Backend Compilation & Execution
+
+### Phase 2: Backend Compilation & Execution
 Navigate to the Backend directory, apply Entity Framework migrations to structure the relational database, and boot the API:
 
-Bash
+```bash
 # Apply pending migrations to PostgreSQL
 dotnet ef database update --project Repository --startup-project Presentation
 
 # Initialize the API and the background telemetry worker
 cd Presentation
 dotnet run
-(Upon execution, the SignalR Hub will initialize and listen for client connections.)
 
-Phase 3: Frontend Initialization
+### Phase 3: Frontend Initialization
 In a separate terminal instance, navigate to the Frontend directory to compile and serve the client application:
 
-Bash
+```bash
 cd Frontend
 npm install
 ng serve -o
-(The browser will automatically launch the operational dashboard.)
-
-🎮 Operational Workflow (Simulation)
-Entity Creation: Utilize the Swagger UI (https://localhost:<port>/swagger) to inject new courier entities via the POST /api/Courier endpoint. (Recommendation: Utilize coordinates near Lat: 37.0000, Lon: 35.3200 for optimal visualization on the default map projection).
-
-Observation: Access the Angular client interface. The background worker evaluates active entities and pushes updated geospatial vectors via SignalR every 3 seconds, resulting in real-time marker translations on the cartographic interface.
-
-Entity Deletion: Executing a DELETE /api/Courier/{id} request will synchronously purge the entity from PostgreSQL, wipe its geospatial index from Redis, and immediately broadcast a termination event to the frontend, removing the marker from the map.
-
-👨‍💻 Architected & Developed by: Özgür Üçdağ
