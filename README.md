@@ -38,7 +38,7 @@ This repository presents a real-time logistics and courier tracking simulation, 
  ┣ 📂 Frontend          # Angular SPA (Interactive Dashboard & Spatial Visualization)
  ┣ 📜 docker-compose.yml # Container orchestration for PostgreSQL and Redis services
  ┗ 📜 README.md
-
+```text
 ## ⚙️ Deployment & Initialization Protocol
 
 To provision the infrastructure and initialize the simulation in a local environment, adhere to the following directives:
