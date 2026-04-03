@@ -1,75 +1,183 @@
 # 🏍️ Real-Time Courier Telemetry & Logistics System
 
-This repository presents a real-time logistics and courier tracking simulation, strictly architected upon **Clean Architecture** principles. Designed to integrate seamlessly into a microservices ecosystem, the system demonstrates advanced distributed data management, asynchronous geospatial telemetry, and event-driven communication.
+> 🚀 A real-time logistics and courier tracking simulation built with **Clean Architecture**, designed for scalability, performance, and modern distributed systems.
 
-## 🚀 Architectural Highlights & Core Features
+---
 
-* **Domain-Centric Design (Clean Architecture):** Ensures high maintainability, testability, and strict separation of concerns by decoupling the core domain business logic from infrastructural dependencies and external frameworks.
-* **Asynchronous Real-Time Telemetry (SignalR):** Facilitates bi-directional, low-latency WebSocket communication, enabling instantaneous geospatial updates to connected clients without the overhead of HTTP polling.
-* **Optimized Dual-Write Persistence Strategy:** * **Relational Persistence (PostgreSQL):** Utilized as the primary source of truth for immutable and historical records, including courier profiles and metadata.
-  * **In-Memory Geospatial Caching (Redis):** Employs Redis Geo-Spatial data structures to process high-throughput, ephemeral location vectors (latitude/longitude), drastically reducing database I/O load.
-* **Autonomous Event-Driven Simulation:** Integrates a robust `.NET BackgroundService` (Worker) that autonomously computes dynamic coordinate vectors and generates mock geospatial telemetry for active entities at defined temporal intervals.
-* **Reactive Client Interface:** A highly responsive, decoupled Single Page Application (SPA) built with Angular, utilizing RxJS for reactive state management and Leaflet.js for dynamic cartographic visualization.
+## 📌 Overview
 
-## 🛠️ Technology Stack
+This project demonstrates a **real-time courier tracking system** integrated into a microservices-ready architecture.
+It focuses on **event-driven communication**, **geospatial data processing**, and **high-performance telemetry streaming**.
 
-**Backend (API & Core Infrastructure):**
-* .NET 8 (C#) / ASP.NET Core Web API
-* Entity Framework Core (Code-First Approach)
-* PostgreSQL (Relational Database)
-* StackExchange.Redis (Distributed Cache & Geo-Spatial Queries)
-* SignalR (Real-Time WebSocket Protocol)
+---
 
-**Frontend (Client Application):**
-* Angular (Standalone Components paradigm)
-* Tailwind CSS (Utility-first styling)
-* Leaflet.js (Interactive mapping)
-* RxJS (Reactive programming)
+## 🧱 Architecture
 
-**DevOps & Tooling:**
-* Docker & Docker Compose (Containerization & Orchestration)
-* Redis Insight / DBeaver (Database Administration)
+Built strictly following **Clean Architecture principles**:
 
-## 📂 Repository Structure
+```
+Domain → Application → Infrastructure → Presentation
+```
 
-```text
+✔ Separation of concerns
+✔ High testability
+✔ Framework-independent core logic
+
+---
+
+## ✨ Core Features
+
+### 📡 Real-Time Communication
+
+* Powered by **SignalR (WebSockets)**
+* Instant courier location updates
+* No HTTP polling overhead
+
+### 🗺️ Geospatial Telemetry Processing
+
+* Redis Geo-Spatial indexing for fast location queries
+* Efficient handling of high-frequency coordinate streams
+
+### 🗄️ Dual Persistence Strategy
+
+| Storage Type    | Technology | Purpose                             |
+| --------------- | ---------- | ----------------------------------- |
+| Relational DB   | PostgreSQL | Source of truth (couriers, history) |
+| In-Memory Cache | Redis      | Real-time location tracking         |
+
+### 🤖 Autonomous Simulation
+
+* `.NET BackgroundService`
+* Generates dynamic courier movement
+* Simulates real-world delivery scenarios
+
+### ⚡ Reactive Frontend
+
+* Angular SPA (Standalone Components)
+* RxJS for reactive state management
+* Leaflet.js for live map rendering
+
+---
+
+## 🛠️ Tech Stack
+
+### 🔧 Backend
+
+* .NET 8 / ASP.NET Core Web API
+* Entity Framework Core (Code-First)
+* PostgreSQL
+* Redis (StackExchange.Redis)
+* SignalR
+
+### 🎨 Frontend
+
+* Angular
+* Tailwind CSS
+* Leaflet.js
+* RxJS
+
+### ⚙️ DevOps
+
+* Docker & Docker Compose
+* Redis Insight
+* DBeaver
+
+---
+
+## 📂 Project Structure
+
+```
 📦 Logistics-Tracking-System
- ┣ 📂 Backend           # .NET Clean Architecture Solution (Domain, Application, Infrastructure, Presentation)
- ┣ 📂 Frontend          # Angular SPA (Interactive Dashboard & Spatial Visualization)
- ┣ 📜 docker-compose.yml # Container orchestration for PostgreSQL and Redis services
+ ┣ 📂 Backend        # Clean Architecture (.NET)
+ ┣ 📂 Frontend       # Angular SPA
+ ┣ 📜 docker-compose.yml
  ┗ 📜 README.md
+```
 
-## ⚙️ Deployment & Initialization Protocol
+---
 
-To provision the infrastructure and initialize the simulation in a local environment, adhere to the following directives:
+## 🚀 Getting Started
 
-### Prerequisites
-* Docker Desktop or Docker Engine
-* .NET SDK (8.0 or higher)
+### ✅ Prerequisites
+
+* Docker
+* .NET 8 SDK
 * Node.js & npm
 * Angular CLI
 
-### Phase 1: Infrastructure Provisioning
-Navigate to the root directory and deploy the containerized dependencies (PostgreSQL & Redis):
+---
+
+## ⚙️ Installation & Run
+
+### 1️⃣ Start Infrastructure
 
 ```bash
 docker compose up -d
+```
 
-### Phase 2: Backend Compilation & Execution
-Navigate to the Backend directory, apply Entity Framework migrations to structure the relational database, and boot the API:
+---
+
+### 2️⃣ Run Backend
 
 ```bash
-# Apply pending migrations to PostgreSQL
+# Apply migrations
 dotnet ef database update --project Repository --startup-project Presentation
 
-# Initialize the API and the background telemetry worker
+# Start API + Worker
 cd Presentation
 dotnet run
+```
 
-### Phase 3: Frontend Initialization
-In a separate terminal instance, navigate to the Frontend directory to compile and serve the client application:
+---
+
+### 3️⃣ Run Frontend
 
 ```bash
 cd Frontend
 npm install
 ng serve -o
+```
+
+---
+
+## 🧠 System Design Highlights
+
+* 📍 Real-time geo-tracking with Redis
+* 🔄 Event-driven architecture
+* ⚡ High-performance data streaming
+* 🧩 Microservices-ready design
+
+---
+
+## 📸 (Optional) Screenshots
+
+> You can add UI screenshots here for better presentation.
+
+```
+![Dashboard](./docs/dashboard.png)
+```
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome. For major changes, please open an issue first.
+
+---
+
+## 📄 License
+
+This project is open-source and available under the **MIT License**.
+
+---
+
+## 💡 Final Notes
+
+This project is ideal for demonstrating:
+
+* Clean Architecture mastery
+* Real-time system design
+* Distributed data handling
+* Modern full-stack engineering
+
+---
