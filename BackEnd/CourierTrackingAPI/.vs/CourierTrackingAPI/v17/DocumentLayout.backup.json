@@ -1,0 +1,327 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\\u00D6zg\u00FCr \u00DC\u00E7da\u011F\\Desktop\\Location Project\\CourierTrackingAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9724E0F3-EEA7-48DE-9BCD-25CE9DCF7FC5}|CourierTrackingAPI.csproj|c:\\users\\\u00F6zg\u00FCr \u00FC\u00E7da\u011F\\desktop\\location project\\couriertrackingapi\\controller\\couriercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9724E0F3-EEA7-48DE-9BCD-25CE9DCF7FC5}|CourierTrackingAPI.csproj|solutionrelative:controller\\couriercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7FDDC82-5F21-4BDE-8BD3-2EC47AB044F9}|..\\Services\\Services.csproj|c:\\users\\\u00F6zg\u00FCr \u00FC\u00E7da\u011F\\desktop\\location project\\services\\icourierservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7FDDC82-5F21-4BDE-8BD3-2EC47AB044F9}|..\\Services\\Services.csproj|c:\\users\\\u00F6zg\u00FCr \u00FC\u00E7da\u011F\\desktop\\location project\\services\\courierservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5042B59-78FF-4396-881E-786EAA4D5FBB}|..\\Repository\\Repository.csproj|c:\\users\\\u00F6zg\u00FCr \u00FC\u00E7da\u011F\\desktop\\location project\\repository\\courierrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7433676-1964-4DFF-B6E2-25601DC8AE98}|..\\Models\\Models.csproj|c:\\users\\\u00F6zg\u00FCr \u00FC\u00E7da\u011F\\desktop\\location project\\models\\dtos\\couriercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7433676-1964-4DFF-B6E2-25601DC8AE98}|..\\Models\\Models.csproj|c:\\users\\\u00F6zg\u00FCr \u00FC\u00E7da\u011F\\desktop\\location project\\models\\interfaces\\icourierrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5042B59-78FF-4396-881E-786EAA4D5FBB}|..\\Repository\\Repository.csproj|c:\\users\\\u00F6zg\u00FCr \u00FC\u00E7da\u011F\\desktop\\location project\\repository\\rediscourierrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7433676-1964-4DFF-B6E2-25601DC8AE98}|..\\Models\\Models.csproj|c:\\users\\\u00F6zg\u00FCr \u00FC\u00E7da\u011F\\desktop\\location project\\models\\interfaces\\icouriercacherepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9724E0F3-EEA7-48DE-9BCD-25CE9DCF7FC5}|CourierTrackingAPI.csproj|c:\\users\\\u00F6zg\u00FCr \u00FC\u00E7da\u011F\\desktop\\location project\\couriertrackingapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9724E0F3-EEA7-48DE-9BCD-25CE9DCF7FC5}|CourierTrackingAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9724E0F3-EEA7-48DE-9BCD-25CE9DCF7FC5}|CourierTrackingAPI.csproj|c:\\users\\\u00F6zg\u00FCr \u00FC\u00E7da\u011F\\desktop\\location project\\couriertrackingapi\\workers\\couriersimulatorworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9724E0F3-EEA7-48DE-9BCD-25CE9DCF7FC5}|CourierTrackingAPI.csproj|solutionrelative:workers\\couriersimulatorworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9724E0F3-EEA7-48DE-9BCD-25CE9DCF7FC5}|CourierTrackingAPI.csproj|c:\\users\\\u00F6zg\u00FCr \u00FC\u00E7da\u011F\\desktop\\location project\\couriertrackingapi\\hub\\courierhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9724E0F3-EEA7-48DE-9BCD-25CE9DCF7FC5}|CourierTrackingAPI.csproj|solutionrelative:hub\\courierhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5042B59-78FF-4396-881E-786EAA4D5FBB}|..\\Repository\\Repository.csproj|c:\\users\\\u00F6zg\u00FCr \u00FC\u00E7da\u011F\\desktop\\location project\\repository\\migrations\\20260403180059_initialcreate2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9724E0F3-EEA7-48DE-9BCD-25CE9DCF7FC5}|CourierTrackingAPI.csproj|c:\\users\\\u00F6zg\u00FCr \u00FC\u00E7da\u011F\\desktop\\location project\\couriertrackingapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9724E0F3-EEA7-48DE-9BCD-25CE9DCF7FC5}|CourierTrackingAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u00D6zg\u00FCr \u00DC\u00E7da\u011F\\Desktop\\Location Project\\Repository\\Migrations\\20260402203501_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5042B59-78FF-4396-881E-786EAA4D5FBB}|..\\Repository\\Repository.csproj|c:\\users\\\u00F6zg\u00FCr \u00FC\u00E7da\u011F\\desktop\\location project\\repository\\appdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5042B59-78FF-4396-881E-786EAA4D5FBB}|..\\Repository\\Repository.csproj|c:\\users\\\u00F6zg\u00FCr \u00FC\u00E7da\u011F\\desktop\\location project\\repository\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5042B59-78FF-4396-881E-786EAA4D5FBB}|..\\Repository\\Repository.csproj|c:\\users\\\u00F6zg\u00FCr \u00FC\u00E7da\u011F\\desktop\\location project\\repository\\repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7433676-1964-4DFF-B6E2-25601DC8AE98}|..\\Models\\Models.csproj|c:\\users\\\u00F6zg\u00FCr \u00FC\u00E7da\u011F\\desktop\\location project\\models\\entities\\courier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5042B59-78FF-4396-881E-786EAA4D5FBB}|..\\Repository\\Repository.csproj|c:\\users\\\u00F6zg\u00FCr \u00FC\u00E7da\u011F\\desktop\\location project\\repository\\migrations\\20260402203621_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 157,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ICourierService.cs",
+              "DocumentMoniker": "C:\\Users\\\u00D6zg\u00FCr \u00DC\u00E7da\u011F\\Desktop\\Location Project\\Services\\ICourierService.cs",
+              "RelativeDocumentMoniker": "..\\Services\\ICourierService.cs",
+              "ToolTip": "C:\\Users\\\u00D6zg\u00FCr \u00DC\u00E7da\u011F\\Desktop\\Location Project\\Services\\ICourierService.cs",
+              "RelativeToolTip": "..\\Services\\ICourierService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T20:16:13.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CourierRepository.cs",
+              "DocumentMoniker": "C:\\Users\\\u00D6zg\u00FCr \u00DC\u00E7da\u011F\\Desktop\\Location Project\\Repository\\CourierRepository.cs",
+              "RelativeDocumentMoniker": "..\\Repository\\CourierRepository.cs",
+              "ToolTip": "C:\\Users\\\u00D6zg\u00FCr \u00DC\u00E7da\u011F\\Desktop\\Location Project\\Repository\\CourierRepository.cs*",
+              "RelativeToolTip": "..\\Repository\\CourierRepository.cs*",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwB0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T20:06:24.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RedisCourierRepository.cs",
+              "DocumentMoniker": "C:\\Users\\\u00D6zg\u00FCr \u00DC\u00E7da\u011F\\Desktop\\Location Project\\Repository\\RedisCourierRepository.cs",
+              "RelativeDocumentMoniker": "..\\Repository\\RedisCourierRepository.cs",
+              "ToolTip": "C:\\Users\\\u00D6zg\u00FCr \u00DC\u00E7da\u011F\\Desktop\\Location Project\\Repository\\RedisCourierRepository.cs*",
+              "RelativeToolTip": "..\\Repository\\RedisCourierRepository.cs*",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T20:43:50.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CourierService.cs",
+              "DocumentMoniker": "C:\\Users\\\u00D6zg\u00FCr \u00DC\u00E7da\u011F\\Desktop\\Location Project\\Services\\CourierService.cs",
+              "RelativeDocumentMoniker": "..\\Services\\CourierService.cs",
+              "ToolTip": "C:\\Users\\\u00D6zg\u00FCr \u00DC\u00E7da\u011F\\Desktop\\Location Project\\Services\\CourierService.cs*",
+              "RelativeToolTip": "..\\Services\\CourierService.cs*",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAiwA0AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T20:07:48.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ICourierRepository.cs",
+              "DocumentMoniker": "C:\\Users\\\u00D6zg\u00FCr \u00DC\u00E7da\u011F\\Desktop\\Location Project\\Models\\Interfaces\\ICourierRepository.cs",
+              "RelativeDocumentMoniker": "..\\Models\\Interfaces\\ICourierRepository.cs",
+              "ToolTip": "C:\\Users\\\u00D6zg\u00FCr \u00DC\u00E7da\u011F\\Desktop\\Location Project\\Models\\Interfaces\\ICourierRepository.cs*",
+              "RelativeToolTip": "..\\Models\\Interfaces\\ICourierRepository.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T20:03:59.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CourierCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\\u00D6zg\u00FCr \u00DC\u00E7da\u011F\\Desktop\\Location Project\\Models\\DTOs\\CourierCreateDto.cs",
+              "RelativeDocumentMoniker": "..\\Models\\DTOs\\CourierCreateDto.cs",
+              "ToolTip": "C:\\Users\\\u00D6zg\u00FCr \u00DC\u00E7da\u011F\\Desktop\\Location Project\\Models\\DTOs\\CourierCreateDto.cs",
+              "RelativeToolTip": "..\\Models\\DTOs\\CourierCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T20:37:44.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CourierController.cs",
+              "DocumentMoniker": "C:\\Users\\\u00D6zg\u00FCr \u00DC\u00E7da\u011F\\Desktop\\Location Project\\CourierTrackingAPI\\Controller\\CourierController.cs",
+              "RelativeDocumentMoniker": "Controller\\CourierController.cs",
+              "ToolTip": "C:\\Users\\\u00D6zg\u00FCr \u00DC\u00E7da\u011F\\Desktop\\Location Project\\CourierTrackingAPI\\Controller\\CourierController.cs*",
+              "RelativeToolTip": "Controller\\CourierController.cs*",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAUwCUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T20:24:49.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ICourierCacheRepository.cs",
+              "DocumentMoniker": "C:\\Users\\\u00D6zg\u00FCr \u00DC\u00E7da\u011F\\Desktop\\Location Project\\Models\\Interfaces\\ICourierCacheRepository.cs",
+              "RelativeDocumentMoniker": "..\\Models\\Interfaces\\ICourierCacheRepository.cs",
+              "ToolTip": "C:\\Users\\\u00D6zg\u00FCr \u00DC\u00E7da\u011F\\Desktop\\Location Project\\Models\\Interfaces\\ICourierCacheRepository.cs*",
+              "RelativeToolTip": "..\\Models\\Interfaces\\ICourierCacheRepository.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T20:43:13.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\\u00D6zg\u00FCr \u00DC\u00E7da\u011F\\Desktop\\Location Project\\CourierTrackingAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\\u00D6zg\u00FCr \u00DC\u00E7da\u011F\\Desktop\\Location Project\\CourierTrackingAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAADEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T20:08:45.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CourierHub.cs",
+              "DocumentMoniker": "C:\\Users\\\u00D6zg\u00FCr \u00DC\u00E7da\u011F\\Desktop\\Location Project\\CourierTrackingAPI\\Hub\\CourierHub.cs",
+              "RelativeDocumentMoniker": "Hub\\CourierHub.cs",
+              "ToolTip": "C:\\Users\\\u00D6zg\u00FCr \u00DC\u00E7da\u011F\\Desktop\\Location Project\\CourierTrackingAPI\\Hub\\CourierHub.cs",
+              "RelativeToolTip": "Hub\\CourierHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T18:18:36.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "20260403180059_InitialCreate2.cs",
+              "DocumentMoniker": "C:\\Users\\\u00D6zg\u00FCr \u00DC\u00E7da\u011F\\Desktop\\Location Project\\Repository\\Migrations\\20260403180059_InitialCreate2.cs",
+              "RelativeDocumentMoniker": "..\\Repository\\Migrations\\20260403180059_InitialCreate2.cs",
+              "ToolTip": "C:\\Users\\\u00D6zg\u00FCr \u00DC\u00E7da\u011F\\Desktop\\Location Project\\Repository\\Migrations\\20260403180059_InitialCreate2.cs",
+              "RelativeToolTip": "..\\Repository\\Migrations\\20260403180059_InitialCreate2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T18:00:59.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CourierSimulatorWorker.cs",
+              "DocumentMoniker": "C:\\Users\\\u00D6zg\u00FCr \u00DC\u00E7da\u011F\\Desktop\\Location Project\\CourierTrackingAPI\\Workers\\CourierSimulatorWorker.cs",
+              "RelativeDocumentMoniker": "Workers\\CourierSimulatorWorker.cs",
+              "ToolTip": "C:\\Users\\\u00D6zg\u00FCr \u00DC\u00E7da\u011F\\Desktop\\Location Project\\CourierTrackingAPI\\Workers\\CourierSimulatorWorker.cs",
+              "RelativeToolTip": "Workers\\CourierSimulatorWorker.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwCsAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-03T18:07:29.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\\u00D6zg\u00FCr \u00DC\u00E7da\u011F\\Desktop\\Location Project\\CourierTrackingAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\\u00D6zg\u00FCr \u00DC\u00E7da\u011F\\Desktop\\Location Project\\CourierTrackingAPI\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAUAAAAAAAAAAABRwAkAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-02T19:45:10.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AppDbContextFactory.cs",
+              "DocumentMoniker": "C:\\Users\\\u00D6zg\u00FCr \u00DC\u00E7da\u011F\\Desktop\\Location Project\\Repository\\AppDbContextFactory.cs",
+              "RelativeDocumentMoniker": "..\\Repository\\AppDbContextFactory.cs",
+              "ToolTip": "C:\\Users\\\u00D6zg\u00FCr \u00DC\u00E7da\u011F\\Desktop\\Location Project\\Repository\\AppDbContextFactory.cs",
+              "RelativeToolTip": "..\\Repository\\AppDbContextFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T20:34:10.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "20260402203621_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\\u00D6zg\u00FCr \u00DC\u00E7da\u011F\\Desktop\\Location Project\\Repository\\Migrations\\20260402203621_InitialCreate.cs",
+              "RelativeDocumentMoniker": "..\\Repository\\Migrations\\20260402203621_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\\u00D6zg\u00FCr \u00DC\u00E7da\u011F\\Desktop\\Location Project\\Repository\\Migrations\\20260402203621_InitialCreate.cs",
+              "RelativeToolTip": "..\\Repository\\Migrations\\20260402203621_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T20:36:21.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "20260402203501_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\\u00D6zg\u00FCr \u00DC\u00E7da\u011F\\Desktop\\Location Project\\Repository\\Migrations\\20260402203501_InitialCreate.cs",
+              "RelativeDocumentMoniker": "..\\Repository\\Migrations\\20260402203501_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\\u00D6zg\u00FCr \u00DC\u00E7da\u011F\\Desktop\\Location Project\\Repository\\Migrations\\20260402203501_InitialCreate.cs",
+              "RelativeToolTip": "..\\Repository\\Migrations\\20260402203501_InitialCreate.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T20:35:01.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Repository.csproj",
+              "DocumentMoniker": "C:\\Users\\\u00D6zg\u00FCr \u00DC\u00E7da\u011F\\Desktop\\Location Project\\Repository\\Repository.csproj",
+              "RelativeDocumentMoniker": "..\\Repository\\Repository.csproj",
+              "ToolTip": "C:\\Users\\\u00D6zg\u00FCr \u00DC\u00E7da\u011F\\Desktop\\Location Project\\Repository\\Repository.csproj",
+              "RelativeToolTip": "..\\Repository\\Repository.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-02T20:04:41.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\\u00D6zg\u00FCr \u00DC\u00E7da\u011F\\Desktop\\Location Project\\Repository\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "..\\Repository\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\\u00D6zg\u00FCr \u00DC\u00E7da\u011F\\Desktop\\Location Project\\Repository\\AppDbContext.cs",
+              "RelativeToolTip": "..\\Repository\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T20:04:52.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Courier.cs",
+              "DocumentMoniker": "C:\\Users\\\u00D6zg\u00FCr \u00DC\u00E7da\u011F\\Desktop\\Location Project\\Models\\Entities\\Courier.cs",
+              "RelativeDocumentMoniker": "..\\Models\\Entities\\Courier.cs",
+              "ToolTip": "C:\\Users\\\u00D6zg\u00FCr \u00DC\u00E7da\u011F\\Desktop\\Location Project\\Models\\Entities\\Courier.cs",
+              "RelativeToolTip": "..\\Models\\Entities\\Courier.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T20:02:25.695Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
