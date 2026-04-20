@@ -1,0 +1,86 @@
+[
+  {
+    "ContainingType": "Presentation.Controllers.CourierController",
+    "Method": "Get",
+    "RelativePath": "api/Courier",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.CourierController",
+    "Method": "Post",
+    "RelativePath": "api/Courier",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "courierDto",
+        "Type": "Models.DTOs.CourierCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.CourierController",
+    "Method": "DeleteCourier",
+    "RelativePath": "api/Courier/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Presentation.Controllers.CourierController",
+    "Method": "UpdateLocation",
+    "RelativePath": "api/Courier/{id}/location",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "lat",
+        "Type": "System.Double",
+        "IsRequired": false
+      },
+      {
+        "Name": "lon",
+        "Type": "System.Double",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CourierTrackingAPI.Controller.OrderController",
+    "Method": "AddOrder",
+    "RelativePath": "api/Order/create-and-assign",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Models.DTOs.OrderCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

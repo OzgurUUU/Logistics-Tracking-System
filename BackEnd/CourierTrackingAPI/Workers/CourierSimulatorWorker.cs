@@ -1,5 +1,8 @@
 ﻿using Microsoft.AspNetCore.SignalR;
-using Services;
+using Microsoft.EntityFrameworkCore;
+using Models.Entities;
+using Repository;
+using Services.Interfaces;
 using System.Collections.Concurrent;
 
 namespace CourierTrackingAPI.Workers
@@ -30,37 +33,66 @@ namespace CourierTrackingAPI.Workers
 
             while (!stoppingToken.IsCancellationRequested)
             {
+                double stepSize = 0.002;
                 try
                 {
                     using (var scope = _serviceProvider.CreateScope())
                     {
-                        var courierService = scope.ServiceProvider.GetRequiredService<ICourierService>();
+
+                        var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
 
                         // 1. Veritabanındaki tüm kuryeleri al
-                        var couriers = await courierService.GetAllCouriersAsync();
+                        var couriers = await context.Couriers.ToListAsync();
 
                         foreach (var courier in couriers)
                         {
-                            // 2. Eğer kurye sözlükte yoksa başlangıç konumunu DB'den al
-                            if (!_courierPositions.ContainsKey(courier.Id))
+                            if (courier.IsAvailable || courier.ActiveOrderId == null)
                             {
-                                _courierPositions.TryAdd(courier.Id, (courier.LastLatitude, courier.LastLongitude));
+                                // KURYE BOŞTA - RASTGELE GEZ
+                                courier.LastLatitude += (random.NextDouble() - 0.5) * 0.003;
+                                courier.LastLongitude += (random.NextDouble() - 0.5) * 0.003;
+
+                                await _hubContext.Clients.All.SendAsync("ReceiveLocation", courier.Id, courier.LastLatitude, courier.LastLongitude, courier.VehicleType);
                             }
+                            else
+                            {
+                                // KURYE SİPARİŞTE - HEDEFE GİT
+                                var order = await context.Orders.FindAsync(courier.ActiveOrderId);
+                                if (order != null && order.Status == OrderStatus.Assigned)
+                                {
+                                    var targetLat = order.DeliveryLatitude;
+                                    var targetLon = order.DeliveryLongitude;
 
-                            // 3. Mevcut konumu al ve küçük bir hareket ekle
-                            var currentPos = _courierPositions[courier.Id];
-                            double newLat = currentPos.Lat + (random.NextDouble() - 0.5) * 0.0015;
-                            double newLon = currentPos.Lon + (random.NextDouble() - 0.5) * 0.0015;
+                                    double dLat = targetLat - courier.LastLatitude;
+                                    double dLon = targetLon - courier.LastLongitude;
 
-                            // 4. Yeni konumu sözlükte güncelle
-                            _courierPositions[courier.Id] = (newLat, newLon);
+                                    double distance = Math.Sqrt(dLat * dLat + dLon * dLon);
 
-                            // 5. Servis üzerinden DB ve Redis'i güncelle
-                            await courierService.UpdateLocationAsync(courier.Id, newLat, newLon);
+                                    if (distance > stepSize)
+                                    {
+                                        // Adım at
+                                        courier.LastLatitude += (dLat / distance) * stepSize;
+                                        courier.LastLongitude += (dLon / distance) * stepSize;
+                                    }
+                                    else
+                                    {
+                                        // Teslimatı yap
+                                        courier.LastLatitude = targetLat;
+                                        courier.LastLongitude = targetLon;
 
-                            // 6. SignalR ile canlı yayın yap
-                            await _hubContext.Clients.All.SendAsync("ReceiveLocation", courier.Id, newLat, newLon);
+                                        courier.IsAvailable = true;
+                                        courier.ActiveOrderId = null;
+                                        order.Status = OrderStatus.Delivered;
+                                        await _hubContext.Clients.All.SendAsync("OrderDelivered", order.Id);
+                                        _logger.LogInformation($"✅ Kurye {courier.Id}, {order.Id} nolu siparişi teslim etti!");
+                                    }
+
+                                    // Yeni konumu yayınla
+                                    await _hubContext.Clients.All.SendAsync("ReceiveLocation", courier.Id, courier.LastLatitude, courier.LastLongitude, courier.VehicleType);
+                                }
+                            }
                         }
+                        await context.SaveChangesAsync();
                     }
                 }
                 catch (Exception ex)
@@ -68,7 +100,6 @@ namespace CourierTrackingAPI.Workers
                     _logger.LogError($"[Simülatör Hatası]: {ex.Message}");
                 }
 
-                // Tüm kuryeler güncellendikten sonra 3 saniye bekle
                 await Task.Delay(3000, stoppingToken);
             }
         }

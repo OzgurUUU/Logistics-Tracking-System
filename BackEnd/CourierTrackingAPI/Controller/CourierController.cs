@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using CourierTrackingAPI;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SignalR;
 using Models.DTOs;
 using Models.Entities;
-using Services;
+using Services.Interfaces;
 
 
 namespace Presentation.Controllers
@@ -11,10 +13,11 @@ namespace Presentation.Controllers
     public class CourierController : ControllerBase
     {
         private readonly ICourierService _service;
-
-        public CourierController(ICourierService service)
+        private readonly IHubContext<CourierHub> _hubContext;
+        public CourierController(ICourierService service,IHubContext<CourierHub> hubContext)
         {
             _service = service;
+            _hubContext = hubContext;
         }
 
         [HttpGet]
@@ -29,6 +32,7 @@ namespace Presentation.Controllers
             try
             {
                 await _service.DeleteCourierAsync(id);
+                await _hubContext.Clients.All.SendAsync("CourierDeleted", id);
                 return Ok(new { Message = $"Kurye ({id}) başarıyla sistemden ve haritadan silindi." });
             }
             catch (Exception ex)

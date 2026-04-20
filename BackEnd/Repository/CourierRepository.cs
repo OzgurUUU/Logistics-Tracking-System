@@ -1,11 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Models.Entities;
-using Models.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Repository.Interfaces;
+
+
 
 namespace Repository
 {
@@ -35,13 +32,11 @@ namespace Repository
         }
         public async Task<Courier?> GetByIdAsync(int id)
         {
-            // Id'ye göre kuryeyi bul (Bulamazsa null döner)
             return await _context.Couriers.FindAsync(id);
         }
 
         public async Task UpdateAsync(Courier courier)
         {
-            // Kuryeyi güncelle ve veritabanına kaydet
             _context.Couriers.Update(courier);
             await _context.SaveChangesAsync();
         }

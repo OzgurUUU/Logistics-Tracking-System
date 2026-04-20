@@ -1,10 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Repository
 {
@@ -14,9 +10,7 @@ namespace Repository
         {
             var optionsBuilder = new DbContextOptionsBuilder<AppDbContext>();
 
-            // Buradaki bağlantı dizesi sadece migration oluşturmak içindir.
-            // Docker'daki PostgreSQL bilgilerini buraya yazıyoruz.
-            optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=courier_db;Username=ozgur;Password=password123");
+            optionsBuilder.UseNpgsql("Host=your_host;Port=your_port;Database=your_db_name;Username=*******;Password=*****");
 
             return new AppDbContext(optionsBuilder.Options);
         }

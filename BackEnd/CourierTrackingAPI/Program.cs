@@ -1,9 +1,10 @@
 using CourierTrackingAPI;
 using CourierTrackingAPI.Workers;
 using Microsoft.EntityFrameworkCore;
-using Models.Interfaces;
+using Repository.Interfaces;
 using Repository;
 using Services;
+using Services.Interfaces;
 using StackExchange.Redis;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,6 +18,7 @@ builder.Services.AddSingleton<StackExchange.Redis.IConnectionMultiplexer>(sp =>
 builder.Services.AddScoped<ICourierCacheRepository, RedisCourierRepository>();
 builder.Services.AddScoped<ICourierRepository, CourierRepository>();
 builder.Services.AddScoped<ICourierService, CourierService>();
+builder.Services.AddScoped<IOrderService, OrderService>();
 builder.Services.AddHostedService<CourierSimulatorWorker>();
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -31,7 +33,7 @@ builder.Services.AddCors(options =>
         policy.WithOrigins("http://localhost:4200") // Angular'ýn adresi
               .AllowAnyHeader()
               .AllowAnyMethod()
-              .AllowCredentials(); // SignalR için þart!
+              .AllowCredentials();
     });
 });
 var app = builder.Build();
